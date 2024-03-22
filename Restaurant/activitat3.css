@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #070707;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    justify-content: right; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 80px; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.foto-fons {
+    position: relative; 
+    background-image: url('restaurantGran.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin-bottom: 65px;
+}
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 45, 45, 0.75); 
+}
+
+.text {
+    position: absolute;
+    top: 30%; 
+    left: 35%; 
+    transform: translate(-50%, -50%); 
+    text-align: left; 
+    color: white;
+    z-index: 1; 
+    font-style: normal;
+}
+
+.text .coberts {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 20px;
+    margin: 0; 
+}
+
+
+
+.titolPetit {
+    font-size: 28px;
+    margin-left: 200px;
+}
+
+
+.nosaltresFotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 65px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 4; 
+            justify-content: left;}
+    .div3 { grid-area: 2 / 1 / 3 / 3;
+            justify-content: right;}
+    .div4 { grid-area: 2 / 3 / 3 / 4; }
+
+    .fotosPetites {
+        width: 265px;
+        height: 220px;
+        border-radius: 3%;
+    }
+
+.minitext {
+    font-size: 16px;    
+    margin-right: 80px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+    
+    .menu1 { grid-area: 1 / 1 / 2 / 4   ;
+    background-color: rgba(12, 12, 49, 0.801);
+    margin-bottom: 125px;}
+    .titolMenu {color: rgb(249, 252, 255);
+    text-align: center;}
+    .menu2 { grid-area: 2 / 1 / 4 / 2; }
+    .menu3 { grid-area: 4 / 1 / 6 / 2; }
+    .menu4 { grid-area: 2 / 2 / 3 / 4; }
+    .menu5 { grid-area: 3 / 2 / 4 / 3; }
+    .menu6 { grid-area: 3 / 3 / 4 / 4; }
+    .menu7 { grid-area: 4 / 2 / 5 / 4; }
+    .menu8 { grid-area: 5 / 2 / 6 / 3; }
+    .menu9 { grid-area: 5 / 3 / 6 / 4; } 
+
+.fotosMenjar {
+    width: 15em;
+    height: 8em;
+    border-radius: 3%;
+}
+
+.menus {
+    place-items: center;
+    display: grid;
+    margin-top: 50px;
+}
+.subTitolMenu {
+    text-align: center;
+}
+
+
+.galeriaFotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-bottom: 65px;
+}
+.fotosG1 { grid-area: 1 / 1 / 2 / 2; }
+.fotosG2 { grid-area: 1 / 2 / 2 / 3; }
+.fotosG3 { grid-area: 1 / 3 / 2 / 4; }
+.fotosG4 { grid-area: 1 / 4 / 2 / 5; }
+.fotosG5 { grid-area: 2 / 1 / 3 / 2; }
+.fotosG6 { grid-area: 2 / 2 / 3 / 3; }
+.fotosG7 { grid-area: 2 / 3 / 3 / 4; }
+.fotosG8 { grid-area: 2 / 4 / 3 / 5; }
+
+.fotosGaleria {
+    width: 15em;
+    height: 8em;
+    border-radius: 3%;
+}
+
+
+footer {
+    background-color: #070707;
+    padding: 20px;
+    display: flex;
+}
+
+.footer-left {
+    display: flex;
+    color: white;
+}
+
+.footer-left p {
+    margin-right: 20px;
+    color: white;
+}
+
+.footer-right {
+    margin-left: auto;
+    color: white;
+}
+
+
